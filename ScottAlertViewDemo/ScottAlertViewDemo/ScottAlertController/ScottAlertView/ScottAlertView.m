@@ -102,6 +102,8 @@
     if (self = [super init]) {
         _titleLable.text = title;
         _messageLabel.text = message;
+        self.layer.cornerRadius = 5;
+        self.layer.masksToBounds = YES;
     }
     return self;
 }
